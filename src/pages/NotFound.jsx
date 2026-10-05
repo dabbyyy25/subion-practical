@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Button from '../components/Button'
 
-export default function NotFoundPage() {
+export default function NotFound() {
   return (
     <div className="px-4 py-20 text-center">
       <h2 className="mb-4 text-6xl font-bold text-indigo-600 dark:text-indigo-400">404</h2>

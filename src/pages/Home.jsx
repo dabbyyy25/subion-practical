@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Building2 } from 'lucide-react'
 import Button from '../components/Button'
 
-export default function HomePage() {
+export default function Home() {
   return (
     <div className="mx-auto max-w-4xl space-y-6 px-4 py-12 text-center">
       <div className="mb-4 inline-block rounded-full bg-indigo-100 p-4 dark:bg-indigo-900/50">

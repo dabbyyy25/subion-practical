@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export default function AboutPage() {
+export default function About() {
   useEffect(() => {
     document.title = 'About - TeamSpace'
   }, [])

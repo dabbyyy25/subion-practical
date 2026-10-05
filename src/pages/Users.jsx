@@ -2,10 +2,10 @@ import { useEffect, useMemo, useState } from 'react'
 import { Search } from 'lucide-react'
 import usersData from '../data/users'
 import UserCard from '../components/UserCard'
-import Loading from '../components/Loading'
+import Loader from '../components/Loader'
 import ErrorMessage from '../components/ErrorMessage'
 
-export default function UsersPage() {
+export default function Users() {
   const [users, setUsers] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [search, setSearch] = useState('')
@@ -55,7 +55,7 @@ export default function UsersPage() {
       </div>
 
       {isLoading ? (
-        <Loading />
+        <Loader />
       ) : filteredUsers.length === 0 ? (
         <ErrorMessage message={`No users found matching "${search}"`} />
       ) : (

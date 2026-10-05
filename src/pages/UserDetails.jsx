@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { ArrowLeft, Briefcase, Building2, Mail } from 'lucide-react'
 import usersData from '../data/users'
-import Loading from '../components/Loading'
+import Loader from '../components/Loader'
 import ErrorMessage from '../components/ErrorMessage'
 import Button from '../components/Button'
 
-export default function UserDetailsPage() {
+export default function UserDetails() {
   const { id } = useParams()
   const navigate = useNavigate()
   const [user, setUser] = useState(null)
@@ -26,7 +26,7 @@ export default function UserDetailsPage() {
     }
   }, [user, isLoading])
 
-  if (isLoading) return <Loading />
+  if (isLoading) return <Loader />
 
   if (!user) {
     return (
